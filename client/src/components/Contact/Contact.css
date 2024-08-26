@@ -1,0 +1,129 @@
+.email-containt li{
+    list-style: none;
+    margin-top: 10px;
+    line-height: 30px;
+    word-spacing: 20px;
+    position: relative;
+    display: block;
+}
+.form-group p{
+    color: #d63031;
+}
+.form-group input{
+    padding: 15px 10px;
+    margin: 15px 0px;
+    width: 90%;
+    background-color: #636e72;
+    border-radius: 30px;
+    border: none;
+}
+.form-group input::placeholder{
+    color: #000;
+}
+.form-group input:focus{
+    outline: none;
+    border: 2px dotted #fff000;
+    color: #12D0D6;
+    font-size: 17px;
+}
+.form-group textarea{
+    padding: 15px 10px;
+    margin: 15px 0px;
+    width: 90%;
+    background-color: #636e72;
+    border-radius: 30px;
+    border: none;
+}
+.form-group textarea:focus{
+    outline: none;
+    border: 2px dotted #fff000;
+    color: #12D0D6;
+    font-size: 17px;
+}
+.form-group textarea::placeholder{
+    color: #000;
+}
+.email-containt li span{
+    position: absolute;
+    margin-top: -5px;
+    margin-left: 10px;
+}
+.concact-area{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+.contact-text{
+    flex-basis: 48%;
+}
+.text-content{
+    text-align: center;
+    margin: 20px;
+    margin-top: 50px;
+    font-size: 35px;
+    font-weight: 600;
+}
+.text-content span{
+    color: #0ef;
+}
+.text-content1{
+    text-align: center;
+    margin: 20px;
+    color: #0ef;
+    font-size: 20px;
+    font-weight: 600;
+}
+.images-containt img{
+    width: 80%;
+}
+.images-containt h1{
+    margin: 10px 0px;
+}
+.images-containt h4{
+    margin: 10px 0px;
+}
+.images-containt p{
+    letter-spacing: 0.3px;
+    line-height: 30px;
+}
+.button-containt [type="submit"]{
+    width: 30%;
+    height: 40px;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: #0ef;
+    color: #000;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 420px){
+    .concact-area{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+    }
+    .contact-text{
+        flex-basis: 90%;
+    }
+}
+
+@media only screen and (max-width: 858px){
+    .concact-area{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+    }
+    .contact-text{
+        flex-basis: 90%;
+    }
+}

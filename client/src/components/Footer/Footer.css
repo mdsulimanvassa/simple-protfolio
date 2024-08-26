@@ -1,0 +1,60 @@
+box-icon{
+    background: transparent;
+}
+.footer-scr a{
+    background: transparent;
+    width: 40px;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    font-size: 35px;
+    height: 40px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 20px;
+    text-decoration: none;
+    display: inline;
+}
+.scroll-btn{
+   position: fixed;
+   bottom: 3rem;
+   right: 20px;
+   padding: 8px 10px;
+   border: none;
+   background: transparent;
+   background-color: #34495e;
+   cursor: pointer;
+   transition: all 0.5s ease 0s;
+}
+/* .scroll-btn a{
+    color: #000;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background: transparent;
+    position: relative;
+    text-decoration: none;
+    padding: 8px;
+    background: #34495e;
+} */
+.footer-containt{
+    padding: 15px 0px 0px 0px;
+    background: #34495e;
+    width: 100%;
+    height: 50px;
+}
+.footer-containt div p{
+    color: #f39c12;
+    background: #34495e;
+}
+.all-services{
+    text-align: center;
+}
+
+@media only screen and (max-width: 420px){
+    .footer-containt{
+        width: 100%;
+    }
+}

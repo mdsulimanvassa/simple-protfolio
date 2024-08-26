@@ -1,0 +1,102 @@
+.readial-bars{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    /* justify-content: space-evenly; */
+    align-items: flex-start;
+}
+.readial-bars .readial-bar{
+    flex-basis: 47%;
+    height: 250px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.readial-bars .readial-bar svg{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    width: 120px;
+    height: 160px;
+}
+.readial-bars .readial-bar .progress-bar {
+    stroke-width: 10;
+    stop-color: #000;
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+    animation: animation-bar 1s linear forwards;
+}
+@keyframes animation-bar {
+    100% {
+        stroke-dashoffset: 0; 
+    }
+}
+.path{
+    stroke-width: 10;
+    stroke: #0ef;
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+}
+.path-1{
+    animation: animation-path1 1s 1s linear forwards;
+}
+.path-2{
+    animation: animation-path2 1s 1s linear forwards;
+}
+.path-3{
+    animation: animation-path3 1s 1s linear forwards;
+}
+.path-4{
+    animation: animation-path4 1s 1s linear forwards;
+}
+@keyframes animation-path1{
+    100%{
+        stroke-dashoffset: 50;
+    }
+}
+@keyframes animation-path2{
+    100%{
+        stroke-dashoffset: 175;
+    }
+}
+@keyframes animation-path3{
+    100%{
+        stroke-dashoffset: 125;
+    }
+}
+@keyframes animation-path4{
+    100%{
+        stroke-dashoffset: 75;
+    }
+}
+.readial-bar .percentage{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+}
+.readial-bar .text{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    left: 40%;
+    bottom: -0px;
+    transform: translateX(-50px);
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+}
+@keyframes showText{
+    100%{
+        opacity: 1;
+    }
+}

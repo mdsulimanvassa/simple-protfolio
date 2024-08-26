@@ -1,0 +1,87 @@
+.containt{
+    padding: 20px;
+    text-align: center;
+}
+.containt h1{
+    margin-bottom: 45px;
+    font-size: 35px;
+    letter-spacing: 1.7px;
+}
+.containt h1 span{
+    color: #0ef;
+}
+.services-containt{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+}
+.services{
+    flex-basis: 30%;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 0 5px #2d3436, 0 0 25px #2d3436, 0 0 5px #2d3436, 0 0 25px #2d3436;
+    border-radius: 10px;
+}
+.services h2{
+    margin: 15px 0px;
+}
+.services p{
+    line-height: 1.3;
+    color: #b2bec3;
+}
+.services a{
+    display: inline-flex;
+    flex-direction: row;
+    font-size: 15px;
+    text-decoration: none;
+    margin-top: 15px;
+    margin-right: 20px;
+    
+}
+.services a:hover{
+    color: #0ef;
+}
+.services a span{
+    margin-top: -3px;
+}
+.services img{
+    width: 20%;
+    margin: 20px 0px;
+}
+.services:hover{
+    transform: translateY(-10px);
+    transition: 0.6s;
+    transform: transition;
+    
+}
+@media only screen and (max-width: 420px){
+    .services-containt{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .services{
+        flex-basis: 100%;
+    }
+    .containt{
+        padding: 0px;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 858px){
+    .services-containt{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .services{
+        flex-basis: 100%;
+    }
+    .containt{
+        padding: 0px;
+        margin: 0;
+    }
+}

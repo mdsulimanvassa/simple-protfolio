@@ -1,0 +1,117 @@
+@media only screen and (max-width: 500px){
+    *{
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    .text{
+        font-size: 20px;
+    }
+    .half-width img{
+        order: 1;
+        background: transparent;
+        margin-bottom: 20px;
+    }
+    .home-content{
+        width: 90%;
+        order: 5;
+        background: transparent;
+    }
+    
+    .home{
+        display: flex;
+        flex-direction: column;
+        margin-left: -15px;
+        height: 900px;
+    }
+    @keyframes sliderButton {
+        0%{
+            left: 0;
+            top: 0;
+        }
+    }
+    .third{
+        width: 90%;
+        height: 400px;
+    }
+
+    .aboute-page img{
+        display: none;
+    }
+    .and{
+        width: 90%;
+    }
+    .aboute-page p{
+        width:100%;
+    }
+    .aboute{
+        background: transparent;
+        margin-top: 50px;
+        margin-left: -15px;
+        padding: 0px;
+    }
+    .aboute-page h1{
+        text-align: center;
+    }
+    .aboute-page h4{
+       text-align: center;
+    }
+
+    .services-containt{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .services{
+        flex-basis: 100%;
+    }
+    .containt{
+        padding: 0px;
+        margin: 0;
+    }
+
+    .bar{
+        
+        max-width: 90%;
+    }
+    .technical-bars{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .flex-containt{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+     }
+     .container1{
+        flex-basis: 100%;
+        margin: 20px;
+        padding: 30px;
+    }
+    .color-containt{
+        text-align: center;
+        margin: 20px;
+    }
+
+    .profolio-containt{
+        display: flex;
+        flex-direction: column;
+    }
+    .frist{
+        width: 90%;
+    }
+
+    .concact-area{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+    }
+    .contact-text{
+        flex-basis: 90%;
+    }
+}

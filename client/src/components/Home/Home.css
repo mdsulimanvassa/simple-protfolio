@@ -1,0 +1,221 @@
+.half-width{
+    float: left;
+    width: 38%;
+    margin-left: 10%;
+
+}
+.half-width h3{
+    font-size: 32px;
+    font-weight: 700;
+    opacity: 0;
+    animation: sliderBottom 1s ease forwards;
+    animation-delay: .7s;
+}
+.home{
+    position: relative;
+    width: 100%;
+    height: 700px;
+    align-items: center;
+    padding: 70px 0% 0;
+}
+.half-width h1{
+    font-size: 56px ;
+    font-weight: 700;
+    margin: -3px 0;
+    opacity: 0;
+    animation: sliderleft 1s ease forwards;
+    animation-delay: 1s;
+}
+.half-width h3 span{
+    color: #0ef;
+}
+.half-width p{
+    font-size: 20px;
+    margin-top: 20px;
+    opacity: 0;
+    animation: sliderLeft 1s ease forwards;
+    animation-delay: 1s;
+}
+.home-scr a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    font-size: 20px;
+    color: rgb(173, 190, 191);
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+    transition: .5s ease;
+    opacity: 0;
+    animation: sliderLeft 1s ease forwards;
+    animation-delay: calc(.2s * var);
+}
+.home-scr a:hover{
+    background: #0ef;
+    color: black;
+    box-shadow: 0 0 20px #0ef;
+}
+.btn-box{
+    position: relative;
+    background: #0ef;
+    text-decoration: none;
+    color: #1e272e;
+    padding: 10px 20px;
+    border-radius: 30px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    animation-name: sliderButton;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan;
+}
+.btn-box:hover{
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 200px cyan;
+}
+.half-width img{
+    width: 65%;
+    overflow: hidden;
+}
+.half-width:hover img{
+    transform: scale(1.1);
+    transition: transform 2s;
+}
+@keyframes sliderBottom {
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes sliderleft {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes sliderLeft {
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes sliderTop {
+    0%{
+        transform: translateX(200px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes sliderButton {
+    0%{
+        left: 0;
+        top: 0;
+    }
+    50%{
+        left: 20px;
+        top: 20px;
+    }
+    100%{
+        left: 0px;
+        top: 0px;
+    }
+}
+
+@media only screen and (max-width: 420px){
+    *{
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    .text{
+        font-size: 20px;
+    }
+    .half-width img{
+        order: 1;
+        background: transparent;
+        margin-bottom: 20px;
+    }
+    .home-content{
+        width: 90%;
+        order: 5;
+        background: transparent;
+    }
+    
+    .home{
+        display: flex;
+        flex-direction: column;
+        margin-left: -15px;
+        height: 900px;
+    }
+    @keyframes sliderButton {
+        0%{
+            left: 0;
+            top: 0;
+        }
+    }
+    .third{
+        width: 100%;
+        height: 400px;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 858px){
+    *{
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    .text{
+        font-size: 20px;
+    }
+    .half-width img{
+        order: 1;
+        background: transparent;
+        margin-bottom: 20px;
+    }
+    .home-content{
+        width: 90%;
+        order: 5;
+        background: transparent;
+    }
+    
+    .home{
+        display: flex;
+        flex-direction: column;
+        margin-left: -15px;
+        height: 900px;
+    }
+    @keyframes sliderButton {
+        0%{
+            left: 0;
+            top: 0;
+        }
+    }
+    .third{
+        width: 100%;
+        height: 400px;
+        text-align: center;
+    }
+}
